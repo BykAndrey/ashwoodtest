@@ -1,0 +1,1000 @@
+@import url( 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic');
+
+/*@font-face {
+  font-family: 'Open Sans';
+  src: url("fonts/OpenSans-Regular.ttf");
+}*/
+@main-font: 'Open Sans', sans-serif;
+@width-page: 1200px;
+@main-color: rgba(255,192,0,1);
+@background-footer: rgba(36,37,38,1);
+@main-text-color: rgba(51,51,51,1);
+
+* {
+  font-family: @main-font;
+}
+
+body {
+  background-image: url("img/topMenu/back.png");
+  background-repeat: no-repeat;
+  background-position: 50% 125px;
+  background-size: 100% auto;
+}
+
+.page {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: @main-font;
+}
+
+header {
+  padding: 0;
+  height: 125px;
+  padding-top: 25px;
+  background-color: white;
+
+  .brand {
+    img {
+      width: auto;
+    }
+  }
+
+  .diller {
+    text-align: right;
+    margin-top: 15px;
+
+    .SelectDiller {
+      height: 37px;
+      line-height: 37px;
+      font-size: 13px;
+    }
+
+    .list {
+      border: 1px solid grey;
+      border-radius: 3px;
+      padding: 0;
+
+      .listlogo {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        line-height: 35px;
+        position: absolute;
+        top: 0;
+        left: 5px;
+        z-index: 25;
+      }
+
+      select {
+        width: 100%;
+        text-align: left;
+        background-color: white;
+        border: none;
+        height: 35px;
+        font-size: 13px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding-left: 30px;
+        background-image: url("img/topMenu/arrow.png");
+        background-repeat: no-repeat;
+        background-position: 97%;
+
+        option {
+          padding-left: 30px;
+          font-size: 13px;
+          color: #333;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .address {
+    padding: 0;
+    padding-top: 20px;
+
+    .telephone {
+      font-size: 24px;
+      font-weight: bold;
+      padding: 0;
+    }
+
+    .place {
+      font-size: 13px;
+    }
+  }
+}
+
+.middle {
+  .advert {
+    background-color: black;
+    margin-top: 25px;
+    height: 550px;
+    padding: 0;
+
+    .container-fluid,
+    .right {
+      padding: 0;
+    }
+
+    .right {
+      position: relative;
+      height: 100%;
+    }
+
+    .Mlabel {
+      height: 390px;
+      background-repeat: no-repeat;
+      background-image: url("img/advert/label.png");
+      background-size: cover;
+      background-position: 50% 50%;
+      text-transform: uppercase;
+      color: white;
+
+      div {
+        padding-left: 20px;
+        padding-top: 150px;
+      }
+
+      span {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+
+        li:first-child {
+          list-style: none;
+        }
+
+        li {
+          color: white;
+          float: left;
+          font-size: 14px;
+          font-weight: 600;
+          padding-right: 15px;
+        }
+      }
+    }
+
+    .wheel {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 265px;
+      background-repeat: no-repeat;
+      background-image: url("img/advert/wheel.png");
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+
+    .hand {
+      height: 165px;
+      background-repeat: no-repeat;
+      background-image: url("img/advert/hand.png");
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+
+    .only3day {
+      height: 165px;
+      background-color: @main-color;
+      color: black;
+      text-align: center;
+      padding-top: 35px;
+
+      h5 {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 0;
+        font-size: 24px;
+      }
+
+      b {
+        font-weight: bold;
+        font-size: 19px;
+      }
+
+      p {
+        font-size: 19px;
+      }
+    }
+
+    .byn {
+      height: 165px;
+      background-color: black;
+      padding-left: 50px;
+      padding-top: 35px;
+      color: white;
+
+      h5 {
+        padding: 0;
+        text-align: left;
+        margin: 0;
+        font-size: 18px;
+        margin: 0;
+      }
+
+      b {
+        text-transform: uppercase;
+        color: @main-color;
+        font-weight: bold;
+        font-size: 41px;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+      }
+
+      p {
+        text-align: left;
+        margin: 0;
+        font-size: 18px;
+        padding: 0;
+      }
+    }
+
+    .big-atlant {
+      height: 385px;
+      position: relative;
+
+      .car {
+        padding-top: 112px;
+        height: 385px;
+        background-repeat: no-repeat;
+        background-image: url("img/advert/car.png");
+        background-size: cover;
+        background-position: 50% 50%;
+        text-transform: uppercase;
+        color: white;
+
+        p {
+          font-size: 36px;
+        }
+
+        .date {
+          background-color: @main-color;
+          font-size: 35px;
+          font-weight: bold;
+          color: black;
+        }
+
+        b {
+          font-size: 55px;
+          font-weight: bold;
+        }
+      }
+
+      .oil {
+        height: 385px;
+        background-repeat: no-repeat;
+        background-image: url("img/advert/oil.png");
+        background-size: cover;
+        background-position: 50% 50%;
+      }
+    }
+    //end big-atlant
+    .big-atlant::after {
+      position: absolute;
+      width: 687px;
+      height: 487px;
+      background-image: url("img/advert/shadow.png");
+      background-repeat: no-repeat;
+      content: ' ';
+      z-index: 30;
+      top: 0;
+      left: 141px;
+      background-position: 48px -100px;
+    }
+    //end big-atlant::after
+  }
+  //end advert
+  .category-part {
+    padding-top: 35px;
+
+    .del-left-pad {
+      padding-left: 0;
+    }
+
+    .del-right-pad {
+      padding-right: 0;
+    }
+
+    .item-category-part {
+      height: 165px;
+      border: 5px solid transparent;
+      text-align: center;
+      background-color: rgba(249, 250, 251, 1);
+      margin-bottom: 27px;
+
+      .image {
+        height: 95px;
+        line-height: 95px;
+        text-align: center;
+      }
+
+      .title {
+        font-family: @main-font;
+        font-size: 15px;
+      }
+    }
+
+    .item-category-part.active {
+      border: 5px solid @main-color;
+    }
+  }
+
+  .sort-brend {
+    border-bottom: 5px solid rgba(249,250,251,1);
+
+    .sort-brend-title {
+      margin-bottom: 45px;
+
+      h2 {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .target-brend {
+    opacity: 0.7;
+    padding-bottom: 25px;
+
+    .borde {
+      display: table;
+      content: ' ';
+    }
+
+    .logo {
+      text-align: center;
+      line-height: 55px;
+
+      img {
+        width: 55px;
+      }
+    }
+    //end logo
+    h4.name {
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+
+    p.count {
+      font-size: 13px;
+    }
+  }
+  //
+  .target-brend.active {
+    opacity: 1;
+    position: relative;
+
+    .borde::after {
+      display: table;
+      content: ' ';
+      left: 0;
+      bottom: -5px;
+      position: absolute;
+      width: 92%;
+      border-bottom: 5px solid @main-color;
+      margin: 0 15px;
+    }
+  }
+  //list-car
+  .list-car {
+    display: none;
+
+    .item {
+      padding-top: 45px;
+
+      .text {
+        padding: 0;
+      }
+
+      .image {
+        padding: 0;
+        background-position: 50% 50%;
+        height: 170px;
+        background-size: cover;
+        text-align: center;
+        background-repeat: no-repeat;
+      }
+
+      .name {
+        font-weight: bold;
+        font-size: 15px;
+        padding: 0;
+        margin-bottom: 15px;
+        margin-top: 25px;
+        letter-spacing: -0.409px;
+        line-height: 16px;
+      }
+      //end name
+      .descript {
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        letter-spacing: 0;
+        padding: 0;
+        font-size: 13px;
+        overflow: hidden;
+        height: 95px;
+        //-webkit-line-clamp: 5;
+        //line-clamp: 5;
+      }
+      //end descript
+      .button {
+        font-size: 13px;
+        padding: 0;
+        background-color: @main-color;
+        height: 38px;
+        border-radius: 2px;
+        line-height: 38px;
+        text-align: center;
+        margin-top: 8px;
+
+        a {
+          color: black;
+        }
+      }
+    }
+    //end item
+  }
+  //end list
+  .list-car.active {
+    display: block;
+  }
+  //end .list-car.active
+}
+
+footer {
+  background-color: @background-footer;
+  width: 100%;
+  margin-top: 38px;
+
+  .top {
+    color: white;
+    font-size: 13px;
+    padding-bottom: 15px;
+
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      margin-top: 35px;
+    }
+
+    .link {
+      padding-bottom: 15px;
+
+      a {
+        color: white;
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      margin-bottom: 23px;
+      color: rgba(152,155,158,1);
+    }
+  }
+
+  .bottom {
+    color: rgb(124,124,124);
+    background-color: white;
+    text-align: center;
+    font-size: 13px;
+    padding: 25px;
+
+    a {
+      color: black;
+      text-decoration: underline;
+    }
+  }
+}
+@media screen and( max-width:@width-page) {
+  .page {
+    width: auto;
+  }
+  //Header
+  header {
+    //address
+    .address {
+      .telephone {
+        font-size: 20px;
+      }
+
+      .place {
+        font-size: 10px;
+      }
+    }
+    //end address
+  }
+
+  .middle {
+    .advert {
+      .big-atlant {
+        .car {
+          .date {
+            font-size: 1.5em;
+          }
+
+          p {
+            font-size: 1.5em;
+
+            b {
+              font-size: 1.5em;
+            }
+          }
+        }
+        //end car
+      }
+      //end big-atlant
+      .only3day {
+        h5 {
+          font-size: 1.2em;
+        }
+
+        b {
+          font-size: 1.2em;
+        }
+
+        p {
+          font-size: 1.2em;
+        }
+      }
+      //end only3day
+
+      .byn {
+        padding-left: 20px;
+
+        h5 {
+          font-size: 1.2em;
+        }
+
+        b {
+          font-size: 2em;
+        }
+
+        p {
+          font-size: 1.2em;
+        }
+      }
+      //end byn
+      .Mlabel {
+        span {
+          font-size: 1.3em;
+        }
+        //end span
+        ul li {
+          float: none;
+          font-size: 1.0em;
+        }
+
+        ul li:first-child {
+          list-style: initial;
+        }
+        //end li
+      }
+      //end label
+    }
+    //end   .advert {
+    //list-car
+    .list-car {
+      .item {
+        .name {
+          font-size: 0.85em;
+          min-height: 32px;
+        }
+      }
+    }
+    //endlist
+  }
+}
+@media screen and( max-width:992px) {
+  //Header
+  header {
+    //выбор диллера
+    .diller {
+      .SelectDiller {
+        height: 25px;
+        line-height: 25px;
+        font-size: 10px;
+      }
+
+      .list {
+        .listlogo {
+          line-height: 20px;
+
+          img {
+            width: 20px;
+          }
+        }
+
+        select {
+          font-size: 10px;
+          height: 25px;
+          font-size: 10px;
+        }
+      }
+    }
+    //address
+    .address {
+      .telephone {
+        font-size: 15px;
+      }
+
+      .place {
+        font-size: 9px;
+      }
+    }
+    //end address
+  }
+  //End Header
+  .middle {
+    //list-car
+    .list-car {
+      .item {
+        //descript
+        .descript {
+          font-size: 0.8em;
+        }
+        //enddescript
+      }
+    }
+    //endlist
+    .target-brend {
+      .borde {
+        width: 100%;
+        text-align: center;
+      }
+      //end borde
+      //logo
+      .logo {
+        img {
+          width: 45px;
+        }
+      }
+      //end logo
+    }
+    //end target-brend
+    .category-part {
+      .del-left-pad,
+      .del-right-pad {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+    }
+    //end category-part
+    .advert {
+      .big-atlant {
+        .car {
+          .date {
+            font-size: 1.5em;
+          }
+
+          p {
+            font-size: 1.5em;
+
+            b {
+              font-size: 1.5em;
+            }
+          }
+        }
+        //end car
+        .oil {
+          display: none;
+        }
+      }
+      //end big-atlant
+      .hand {
+        display: none;
+      }
+
+      .only3day {
+        h5 {
+          font-size: 1.2em;
+        }
+
+        b {
+          font-size: 1.2em;
+        }
+
+        p {
+          font-size: 1.2em;
+        }
+      }
+      //end only3day
+
+      .byn {
+        padding-left: 20px;
+
+        h5 {
+          font-size: 1.2em;
+        }
+
+        b {
+          font-size: 2em;
+        }
+
+        p {
+          font-size: 1.2em;
+        }
+      }
+      //end byn
+      .Mlabel {
+        span {
+          font-size: 1.3em;
+        }
+        //end span
+        ul li {
+          float: none;
+          font-size: 1.0em;
+        }
+
+        ul li:first-child {
+          list-style: initial;
+        }
+        //end li
+      }
+      //end label
+    }
+    //end   .advert {
+  }
+  //end middle
+}
+@media screen and( max-width:768px) {
+  header {
+    //Логотип
+    height: 140px;
+
+    .brand {
+      line-height: 70px;
+
+      img {
+        width: auto;
+        height: 40px;
+      }
+    }
+    //adress
+    .address {
+      .telephone {
+        font-size: 20px;
+      }
+
+      .place {
+        font-size: 12px;
+      }
+    }
+    //end address
+  }
+  //end header
+  .middle {
+    .advert {
+      height: auto;
+
+      .big-atlant {
+        .car {
+          .date {
+            font-size: 1.5em;
+          }
+
+          p {
+            font-size: 1.5em;
+
+            b {
+              font-size: 1.5em;
+            }
+          }
+        }
+        //end car
+        .oil {
+          display: none;
+        }
+      }
+      //end big-atlant
+      .hand {
+        display: none;
+      }
+
+      .only3day {
+        h5 {
+          font-size: 1.2em;
+        }
+
+        b {
+          font-size: 1.2em;
+        }
+
+        p {
+          font-size: 1.2em;
+        }
+      }
+      //end only3day
+
+      .byn {
+        padding-left: 20px;
+
+        h5 {
+          font-size: 1.2em;
+        }
+
+        b {
+          font-size: 2em;
+        }
+
+        p {
+          font-size: 1.2em;
+        }
+      }
+      //end byn
+      .Mlabel {
+        height: 100px;
+        padding: 0;
+        text-align: center;
+
+        div {
+          padding: 0;
+          margin: 10px;
+        }
+
+        span {
+          font-size: 1.3em;
+        }
+        //end span
+        ul li {
+          //float: left;
+          font-size: 1.0em;
+        }
+
+        ul li:first-child {
+          list-style: initial;
+        }
+        //end li
+      }
+      //end label
+      .wheel {
+        display: none;
+      }
+    }
+    //end   .advert {
+    //list-car
+    .list-car {
+      .item {
+        //image
+        .image {
+          background-size: auto;
+        }
+        //end image
+      }
+      //end item
+    }
+    //endlist
+  }
+}
+@media screen and( max-width:575px) {
+  header {
+    padding-top: 0;
+    height: 100px;
+    //Логотип
+    .brand {
+      line-height: 70px;
+
+      img {
+        width: auto;
+        height: 35px;
+      }
+    }
+
+    .SelectDiller {
+      padding: 0 5px 0 0;
+    }
+
+    .address {
+      .telephone {
+        font-size: 12px;
+      }
+
+      .place {
+        font-size: 9px;
+        padding: 0;
+      }
+    }
+  }
+
+  .middle {
+    .advert {
+      margin-top: 15px;
+
+      .only3day {
+        height: auto;
+        padding: 20px 10px;
+
+        h5 {
+          font-size: 1em;
+        }
+
+        b {
+          font-size: 1em;
+        }
+
+        p {
+          font-size: 1em;
+        }
+      }
+      //end only3day
+
+      .byn {
+        height: auto;
+        padding: 20px 10px;
+
+        h5 {
+          font-size: 1em;
+        }
+
+        b {
+          font-size: 1.8em;
+        }
+
+        p {
+          font-size: 1em;
+        }
+      }
+      //end byn
+    }
+    //list-car
+    .list-car {
+      .item {
+        //image
+        .image {
+          background-size: cover;
+          height: 100px;
+        }
+        //end image
+      }
+      //end item
+    }
+    //endlist
+    //target-brend
+    .target-brend {
+      .borde {
+        width: 100%;
+        text-align: center;
+      }
+      //end borde
+      //logo
+      .logo {
+        img {
+          width: 40px;
+        }
+      }
+      //end logo
+      //h4.name
+      h4.name {
+        font-size: 0.9em;
+      }
+      //end h4.name
+      //count
+      p.count {
+        font-size: 0.8em;
+      }
+      //count
+    }
+    //end target-brend
+    .category-part {
+      .item-category-part {
+        .title {
+          font-size: 0.8em;
+        }
+        //end title
+      }
+      //end item-category-part
+    }
+    //end category-part
+  }
+  //end middle
+}
